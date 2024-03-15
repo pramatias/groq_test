@@ -75,13 +75,16 @@ The program sends a chat completion request to the Groq API with the following p
 
 The parameters are as follows:
 
-model: The language model to use for generating completions.
-messages: An array of messages defining the conversation.
-temperature: Controls randomness in the completion.
-max_tokens: Maximum number of tokens to generate.
-top_p: Controls diversity via nucleus sampling.
-stop: A stop sequence to signal the AI to stop generating content.
-stream: Set to true if partial message deltas will be sent.
+    Required:
+    model: The language model to use for generating completions.
+    messages: An array of messages defining the conversation.
+    
+    Optional:
+    temperature: Controls randomness in the completion.
+    max_tokens: Maximum number of tokens to generate.
+    top_p: Controls diversity via nucleus sampling.
+    stop: A stop sequence to signal the AI to stop generating content.
+    stream: Set to true if partial message deltas will be sent.
 
 
 ## Example Response
