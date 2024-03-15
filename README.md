@@ -13,7 +13,7 @@ This Rust program demonstrates how to interact with the Groq API using the Reqwe
 1. Clone the repository:
 
     ```bash
-    git@github.com:pramatias/groq_test.git
+    git clone git@github.com:pramatias/groq_test.git
     ```
 
 2. Navigate to the project directory:
@@ -25,6 +25,7 @@ This Rust program demonstrates how to interact with the Groq API using the Reqwe
 3. Build and run the program:
 
     ```bash
+    cargo build --release
     cargo run
     ```
 
@@ -46,7 +47,43 @@ You can modify the following parameters in the `main()` function of `main.rs` to
 - `stop`: A stop sequence to signal the AI to stop generating content.
 - `stream`: Set to `true` if partial message deltas will be sent.
 
+## Example Request
+
+The program sends a chat completion request to the Groq API with the following parameters:
+
+```json
+{
+    "model": "mixtral-8x7b-32768",
+    "messages": [
+        {
+            "role": "system",
+            "content": "you are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "Explain the importance of low latency LLMs"
+        }
+    ],
+    "temperature": 0.5,
+    "max_tokens": 1024,
+    "top_p": 1,
+    "stop": null,
+    "stream": false
+}
+
+The parameters are as follows:
+
+model: The language model to use for generating completions.
+messages: An array of messages defining the conversation.
+temperature: Controls randomness in the completion.
+max_tokens: Maximum number of tokens to generate.
+top_p: Controls diversity via nucleus sampling.
+stop: A stop sequence to signal the AI to stop generating content.
+stream: Set to true if partial message deltas will be sent.
+
+
 ## Example Response
+choices -> message -> content is the LLM response 
 
 ```json
 {
@@ -59,7 +96,7 @@ You can modify the following parameters in the `main()` function of `main.rs` to
             "index": 0,
             "message": {
                 "role": "assistant",
-                "content": "Low Latency Large Language Models (LLMs) are critical"
+                "content": "Low Latency Large Language Models (LLMs) are critical..."
             },
             "logprobs": null,
             "finish_reason": "stop"
