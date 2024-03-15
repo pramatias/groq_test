@@ -2,6 +2,10 @@
 
 This Rust program demonstrates how to interact with the Groq API using the Reqwest crate. It sends a chat completion request to the API and extracts the response to display on the console.
 
+For more information on Groq's functionality and some simple examples, refer to the [Groq documentation](https://console.groq.com/docs/text-chat).
+
+[Get Groq keys](https://console.groq.com/keys).
+
 ## Requirements
 
 - Rust (https://www.rust-lang.org/tools/install)
@@ -72,6 +76,7 @@ The program sends a chat completion request to the Groq API with the following p
 }
 
 ```
+User's prompt is in messages -> content
 
 The parameters are as follows:
 
