@@ -50,8 +50,11 @@ console.
 You can modify the following parameters in the `main()` function of `main.rs` to
 customize the request:
 
+Required
 - `model`: The language model to use for generating completions.
 - `messages`: An array of messages defining the conversation.
+
+Optional
 - `temperature`: Controls randomness in the completion.
 - `max_tokens`: Maximum number of tokens to generate.
 - `top_p`: Controls diversity via nucleus sampling.
@@ -85,22 +88,8 @@ The program sends a chat completion request to the Groq API with the following p
 ```
 User's prompt is in messages -> content
 
-The parameters are as follows:
-
-    Required:
-    model: The language model to use for generating completions.
-    messages: An array of messages defining the conversation.
-    
-    Optional:
-    temperature: Controls randomness in the completion.
-    max_tokens: Maximum number of tokens to generate.
-    top_p: Controls diversity via nucleus sampling.
-    stop: A stop sequence to signal the AI to stop generating content.
-    stream: Set to true if partial message deltas will be sent.
-
-
 ## Example Response
-choices -> message -> content is the LLM response 
+choices -> message -> content is the LLM's response 
 
 ```json
 {
