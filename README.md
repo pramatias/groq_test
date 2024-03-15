@@ -91,7 +91,7 @@ The program sends a chat completion request to the Groq API with the following p
 }
 
 ```
-User's prompt is in messages -> content
+User's prompt is in: messages -> content
 
 ## Example Response
 
