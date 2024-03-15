@@ -71,6 +71,8 @@ The program sends a chat completion request to the Groq API with the following p
     "stream": false
 }
 
+```
+
 The parameters are as follows:
 
 model: The language model to use for generating completions.
@@ -112,3 +114,5 @@ choices -> message -> content is the LLM response
     },
     "system_fingerprint": null
 }
+
+```
