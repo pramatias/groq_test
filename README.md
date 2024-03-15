@@ -1,10 +1,13 @@
 # Groq API Test with Rust
 
-This Rust program demonstrates how to interact with the Groq API using the Reqwest crate. It sends a chat completion request to the API and extracts the response to display on the console.
+This Rust program demonstrates how to interact with the Groq API using the
+Reqwest crate. It sends a chat completion request to the API and extracts the
+response to display on the console.
 
-For more information on Groq's functionality and some simple examples, refer to the [Groq documentation](https://console.groq.com/docs/text-chat).
+For more information on Groq's functionality and some simple examples, refer to
+the [Groq documentation](https://console.groq.com/docs/text-chat)
 
-[Get Groq keys](https://console.groq.com/keys).
+[Get Groq keys](https://console.groq.com/keys)
 
 ## Requirements
 
@@ -35,13 +38,17 @@ For more information on Groq's functionality and some simple examples, refer to 
 
 ## Usage
 
-Before running the program, make sure you have set the `GROQ_API_KEY` environment variable to your Groq API key.
+Before running the program, make sure you have set the `GROQ_API_KEY`
+environment variable to your Groq API key.
 
-The program sends a chat completion request to the Groq API with predefined messages and parameters. It then extracts the response and prints it on the console.
+The program sends a chat completion request to the Groq API with predefined
+messages and parameters. It then extracts the response and prints it on the
+console.
 
 ## Configuration
 
-You can modify the following parameters in the `main()` function of `main.rs` to customize the request:
+You can modify the following parameters in the `main()` function of `main.rs` to
+customize the request:
 
 - `model`: The language model to use for generating completions.
 - `messages`: An array of messages defining the conversation.
