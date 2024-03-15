@@ -9,6 +9,11 @@ the [Groq documentation](https://console.groq.com/docs/text-chat)
 
 [Get Groq keys](https://console.groq.com/keys)
 
+## Groq's rate limits for chat completions for each key issued:
+- 30 requests per minute (RPM)
+- 14,400 requests per day (RPD)
+- 40,000 tokens per minute (TPM)
+
 ## Requirements
 
 - Rust (https://www.rust-lang.org/tools/install)
