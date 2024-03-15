@@ -89,7 +89,6 @@ The program sends a chat completion request to the Groq API with the following p
 User's prompt is in messages -> content
 
 ## Example Response
-choices -> message -> content is the LLM's response 
 
 ```json
 {
@@ -120,3 +119,4 @@ choices -> message -> content is the LLM's response
 }
 
 ```
+LLM's response is in: choices -> message -> content
